@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.jpg" alt="Logo">
+    </header>
+    
+    <section class="ingresar_texto">
+        <div class="container1">
+            <textarea class="textarea1" name="comentarios" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="warning-container">
+                    <span class="warning-icon">⚠️</span>
+                    <span class="warning-text">Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="botones-container">
+                    <button class="btn btn-primary" id="encriptarBtn">Encriptar</button>
+                    <button class="btn btn-secondary" id="desencriptarBtn">Desencriptar</button>
+                </div>
+        </div>
+        <div class="container2">
+            <div class="textarea2" id="output">
+                <img id="outputImage" src="./imagenes/imgen2.jpg" alt="muñeco de alura viendo por una lupita un diamante">
+                <h1 id="outputText">Ningún mensaje fue encontrado</h1>
+                <p id="outputParagraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>  
+            <textarea class="hidden-textarea" id="realTextarea" placeholder="Escribe aquí..."></textarea>
+            <button class="btn-copy" id="copyButton">Copiar Texto</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+<footer>
+    Desarrollado por Ana Sofi Cuspian
+</footer>
+</body>
+</html>
